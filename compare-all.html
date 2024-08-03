@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare All</title>
+    <style>
+        
+.cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+       table{
+        text-align: center;
+        background-color: #FAFAFA;
+        border: 2px solid  #3C3C3C;
+        border-collapse:collapse;
+        width: 90%;
+        height: auto;
+        position: relative;
+        top: 50px;
+        left:50px;
+        right:50px;
+       }
+       th{
+        background-color: #424242;
+        color: #FAFAFA;
+        border: 2px solid  #FAFAFA;
+        padding: 30px;
+        font-size: 25px;
+       }
+       td{
+        font-size:20px;
+       padding:20px;
+       border: 2px solid  #3C3C3C;
+       }
+       tr:hover{
+        background-color: #F9ED32;
+       }
+    div{
+    background-color: #f9ED32;
+    height:500px ;
+    width: 800px;
+    position: relative;
+    top: 200px;
+    left: 350px;
+    background-position: center;
+    background-image: url(black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: myani;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes myani {
+    0% { background-image: url('black.png'); }
+    25% { background-image: url('Copy of final design try 2 cross view.168.png'); }
+    75% { background-image: url('Copy of final design try 2 cross view.182.png'); }
+    100% { background-image: url('black.png'); }
+
+}
+    button{
+        width: 350px;
+        height: 100px;
+        position: absolute;
+        top: 1699px;
+        left: 600px;
+        bottom: 30px;
+        padding: 20px;
+        font-size: 30px;
+        color: #fafafa;
+        background-color: #151515;
+        border-radius: 30px;
+        
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <table>
+    <tr>
+        <th>Specification</th>
+        <th>Rhyno SE03
+            Lite</th>
+        <th>Rhyno SE03</th>
+        <th>Rhyno SE03 Max</th>
+    </tr>
+    <tr>
+        <td>Battery</td>
+        <td>1.8Kwh</td>
+        <td>2.7Kwh</td>
+        <td>2.7Kwh</td>
+    </tr>
+    <tr>
+        <td>Battery
+            features</td>
+        <td>LFP with
+            1500 cycles
+            Active
+            Balancing
+            Waterproof
+            (IP67)</td>
+        <td>LFP with 1500
+            cycles
+            Active
+            Balancing
+            Waterproof
+            (IP67)</td>
+        <td>LFP with 1500
+            cycles
+            Active Balancing
+            Waterproof
+            (IP67)</td>
+    </tr>
+    <tr>
+        <td>Battery
+            warranty</td>
+        <td>3 years</td>
+        <td>3 years</td>
+        <td>3 years</td>
+    </tr>
+    <tr>
+        <td>Charging time</td>
+        <td>3 hours (12A)</td>
+        <td>4 hours (12A)</td>
+        <td>4 hours (12A)</td>
+    </tr>
+    <tr>
+        <td>Motor</td>
+        <td>1500W</td>
+        <td>1500W</td>
+        <td>2000W</td>
+    </tr>
+    <tr>
+        <td>Max speed</td>
+        <td>55 km/h</td>
+        <td>55 km/h</td>
+        <td>65 km/h</td>
+    </tr>
+    <tr>
+        <td>Warranty on
+            electronics</td>
+        <td>1 year</td>
+        <td>1 year</td>
+        <td>1 year</td>
+    </tr>
+    <tr>
+        <td>Max range
+            (@30km/h)</td>
+        <td>100 km</td>
+        <td>150 km</td>
+        <td>120 km</td>
+    </tr>
+    <tr>
+        <td>Max range
+            (@45km/h)</td>
+        <td>90 km</td>
+        <td>110 km</td>
+        <td>100 km</td>
+    </tr>
+    <tr>
+        <td>Max range
+            (@full speed)</td>
+        <td>60 km</td>
+        <td>90 km</td>
+        <td>80 km</td>
+    </tr>
+    <tr>
+        <td>Other key
+            benefits</td>
+        <td>Fire-safe
+            Battery
+            Range
+            prediction
+            Comfortable
+            ride
+            Stable and
+            safe</td>
+        <td>Fire-safe
+            battery
+            Range
+            prediction
+            Comfortable
+            ride
+            Stable and
+            safe</td>
+        <td>Fire-safe battery
+            Range
+            prediction
+            Comfortable ride
+            Stable and safess</td>
+    </tr>
+    </table>
+    <div>     </div>
+    <a href="payment.html"><button>Buy Now</button></a>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+            
+        })
+    </script>
+</body>
+</html>

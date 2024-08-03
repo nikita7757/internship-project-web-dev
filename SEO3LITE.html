@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO3 Lite</title>
+    <style>
+           body{
+        font-family: sans-serif;
+    }
+         p{
+            font-size: 25px;
+            margin: 20px;
+        }
+        p::first-letter {
+        font-weight: bold;
+        color: blue;
+        font-size: 3em; /* Example: Makes the first letter 3 times larger */
+        line-height: 1; /* Ensures the first letter doesn't affect line spacing */
+        padding-right: 5px;
+        }
+        
+.cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+         table{
+        text-align: center;
+        background-color: #FAFAFA;
+        border: 2px solid  #3C3C3C;
+        border-collapse:collapse;
+        width: 90%;
+        height: auto;
+        position: relative;
+        top: 50px;
+        left:50px;
+        right:50px;
+       }
+       th{
+        background-color: #424242;
+        color: #FAFAFA;
+        border: 2px solid  #FAFAFA;
+        padding: 30px;
+        font-size: 25px;
+       }
+       td{
+        font-size:20px;
+       padding:20px;
+       border: 2px solid  #3C3C3C;
+       }
+       tr:hover{
+        background-color: #F9ED32;
+       }
+    </style>
+</head>
+<body>
+    <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <p>
+        This Rhyno is an entry-level variant tailored for medium-power,
+         single-person usage. This machine maintains the Rhyno standards with
+          a fire-safe advanced LFP battery and all the other benefits of owning a Rhyno but
+         is designed with a smaller battery and motor. Offering the same elegance, comfort, and style, this variant is tailored 
+         for those seeking an easy-on-the-pocket solution without 
+         sacrificing essential benefits.
+          With an 80-100 km range on a single charge and a top speed of 55 km/h, the Rhyno SE03 Lite ensures effortless commuting.
+           If you're in pursuit of thrills or frequently ride with a pillion, we recommend exploring our higher-power variants.
+            Here are some technical details for the SE03 Lite that you might find valuable.
+    </p>
+    <table>
+        <tr>
+            <th> Specification</th>
+            <th>Rhyno SE03 Lite</th>
+        </tr>
+        <tr>
+            <td>Battery  </td>
+            <td>1.8Kwh</td>
+        </tr>
+        <tr>
+            <td>Battery features</td>
+            <td>Battery features
+                LFP with 1500 cycles
+                Active Balancing
+                Waterproof (IP67)
+                
+                </td>
+        </tr>
+        <tr>
+            <td>Battery warranty</td>
+            <td>3 years  </td>
+        </tr>
+        <tr>
+            <td>Charging time</td>
+            <td>3 hours (12A)</td>
+        </tr>
+        <tr>
+            <td>Motor</td>
+            <td>Motor</td>
+        </tr>
+        <tr>
+            <td>Max speed</td>
+            <td>1500W</td>
+        </tr>
+        <tr>
+            <td>Warranty on electronics</td>
+            <td>1 year</td>
+        </tr>
+        <tr>
+            <td>Max range (@30km/h)</td>
+            <td>100 km</td>
+        </tr>
+        <tr>
+            <td>Max range (@45km/h)</td>
+            <td>90 km</td>
+        </tr>
+        <tr>
+            <td>Max range (@full speed)</td>
+            <td>70 km</td>
+        </tr>
+        <tr>
+            <td>Other key benefits</td>
+            <td>Fire-safe Battery
+                Range prediction
+                Comfortable ride
+                Stable and safe
+                </td>
+        </tr>
+
+    </table>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+            
+        })
+    </script>
+</body>
+</html>

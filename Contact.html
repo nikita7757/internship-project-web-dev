@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+     body{
+          background-color: #EDEDED;
+        }
+       
+    .contact{
+    color: rgb(15, 14, 14);
+    font-size: 100px;
+    text-align: center;
+    margin: 0px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    
+    text-shadow: 5px 5px  rgb(255, 255, 255);
+    animation: typing 1s steps(50) forwards;;
+    }
+    @keyframes typing {
+    from {
+        width: 0; 
+        opacity: 0;
+    }
+    to {
+        width: 100%; 
+    }
+}
+    #Seccontact {
+    background-color: #EDEDED;
+    color: #252525;
+    margin: 50px auto;
+    padding: 10px;
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10 10px white;
+    text-align: center;
+   
+    }
+    ol{
+    position: relative;
+    right: 10px;
+    list-style-type: none;
+    }
+    #contactp {
+    font-size: 40px;
+    animation:fade-in-left  5s forwards;
+     }
+
+  h2{
+    font-size: 50px;
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 15px;
+    animation: fade-in-left  5s forwards;
+  }
+  a{
+    font-size: 25px;
+  }
+  li{
+    font-size: 30px;
+    padding: 20px;
+    animation: fade-in-left  5s forwards;
+  }
+    
+.cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+#location {
+  font-size: 30px;
+  animation:fade-in-left 5s forwards;
+  
+}
+@keyframes fade-in-left{
+          from{
+                opacity:0;
+                transform: translateX(100%);
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+</style>
+</head>
+<body>
+  <div class="cursor" style="top: 275px; left: 661px;"></div>
+      <h3 class="contact">Contact Us</h3>
+  <section id="Seccontact" >
+       
+      <p id="contactp">
+        To pre-book, please contact us at:
+      </p>
+    <ol>
+      <li >Email: <a  href="info@rhyno.in">info@rhyno.in</a></li>
+      <li >Phone: <a  href="+91-9023987528">+91-9023987528</a></li>
+    </ol>
+    <h2>
+      Location:
+    </h2>
+    <p id="location">   
+     Rhyno Wheels Private limited, Near UG hostel gate #2,
+     Behind PDEU, Raisan, Gandhinagar, Gujarat, India
+    </p>
+  </section>
+  <script>
+      const cursor = document.querySelector('.cursor');
+      document.addEventListener('mousemove',(e)=>{
+          cursor.style.left = e.pageX +'px';
+          cursor.style.top = e.pageY +'px';
+          
+      })
+  </script>
+</body>
+</html>

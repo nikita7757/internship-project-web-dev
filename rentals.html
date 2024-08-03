@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals</title>
+    <style>
+        
+.cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+    
+
+.cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+body{
+            background-color: black;
+            color: #F2F2F2;
+            animation: myani 5s;
+            overflow-x: hidden;
+
+        }
+        @keyframes myani{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+          p{
+            font-size: 35px;
+            margin: 20px;
+            padding: 50px;
+        }
+        h2{
+            text-align: center;
+            font-size: 35px;
+            padding: 20px;
+        }
+        h1{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <h1>Rentals</h1>
+    <p>
+        Explore the roars of Rhyno at your own pace with our rental options! 
+        Test the waters with our flexible rental model, available for a week or
+         a month, allowing you to experience the Rhyno first hand before committing.
+          Simply visit our authorized dealerships to unlock this opportunity.
+         Additionally, we're redefining campus commuting with our rental fleet
+          tailored for college students. Navigate your daily commute effortlessly
+           by renting Rhyno vehicles on an hourly basis through our user-friendly mobile app.
+            Embrace the freedom to ride and
+        explore a new dimension in sustainable and convenient transportation.
+    </p>
+    <h2>Download our rental app </h2>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+            
+        })
+    </script>
+</body>
+</html>

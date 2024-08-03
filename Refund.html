@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy</title>
+    <style>
+        body{
+          background-color: #EDEDED;
+            color: white;
+            padding: 20px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            animation: myani 5s;
+        }
+        @keyframes myani{
+            from{
+                 opacity:0;
+                 transform: translateY(-100%);
+                }
+            to{
+                 opacity: 1;
+                 transform: translateY(0);
+            }
+        }
+        div{
+         text-align: center;
+         background-color: transparent;
+         color: #414141;
+         border-radius: 30px;
+         margin: 25px;
+         padding: 20px;
+        }
+    
+    
+.cursor {
+    width: 5px;
+    height: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+    h1{
+        color: #060505;
+        text-align: center;
+        font-size: 50px;
+    }
+    h2 , h3{
+        font-size: 25px;
+        color: #060505;
+        font-weight: 800;
+    
+    }
+    p{
+        font-size: 20px;
+        font-weight: 300;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <h1>Refund Policy</h1>
+    <div>
+        <h2>Our refund policy outlines the terms and conditions 
+            for refunds on purchases made through our website.</h2>
+    <h2>Returns</h2>
+          <p>All sales are final. We do not accept returns or exchanges unless the item you purchased is defective. If you receive
+             a defective item, please contact us at info@rhyno.inwith of the product and the defect.
+            Upon receipt of the returned product, we will fully examine it and notify you via email, 
+            within a reasonable period of time, whether you are entitled to a refund or a 
+            replacement as a result of the defect. If you are entitled to a replacement or refund,
+             we will replace the product or refund the purchase price, using the original method of payment.
+          </p>
+    <h2>Refunds</h2>
+          <p>
+            If your return is approved, we will initiate a refund to your credit card (or original method of payment). You will 
+            receive the credit within a certain amount of days, depending on your card issuer's policies.
+          </p>
+   <h2>Contact Us</h2>
+          <p>
+            If you have any questions about our Returns and Refunds Policy, please contact us:
+            <br><br> Email: info@rhyno.in
+           <br> Phone: +91-9023987528
+          </p> 
+   
+    </div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+            
+        })
+    </script>
+</body>
+</html>

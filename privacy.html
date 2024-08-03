@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+      
+  .cursor {
+    width: 2px;
+    height: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events:none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+  }
+ body{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+   padding: 20px;
+   overflow-x: hidden;
+   animation:magic 3s;
+
+ }
+ @keyframes magic{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+ }
+  div{
+      text-align: center;
+      background-color: #F2F2F2;
+       color: #414141;
+       border-radius: 30px;
+       margin: 25px;
+       padding: 20px;
+          }
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    h2 , h3{
+        font-size: 25px;
+        color: #2C2A2A;
+    }
+    p{
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+  <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <h1>Privacy Policy</h1>
+    <div>
+
+    <h2>Introduction</h2>
+          <p>This Privacy Policy describes how we collect,
+             use, and disclose your information when you visit our website.
+          </p>
+    <h2>Information We Collect</h2>
+          <p>
+            We collect information you provide to us when you fill out forms on our website,
+             such as your name, email address, and any other information you choose to provide
+          </p>
+   <h2>How We Use Your Information</h2>
+          <p>
+            We use the information we collect to communicate with you,
+             provide services you request, and improve our website
+          </p> 
+    <h2>Disclosure of Your Information</h2>
+          <p>
+            We may disclose your information to third 
+            parties as required by law or to fulfill the purposes outlined in this Privacy Policy.
+          </p>
+    <h2>Security</h2>
+          <p>
+            We take appropriate measures to protect 
+            your information from unauthorized access or disclosure
+          </p>     
+    <h2>Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+          </p>
+    <h2>Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, please contact us.
+
+
+         <h3>  Last updated: [25/06/2024]</h3> 
+          </p>
+    </div>
+    <script>
+      const cursor = document.querySelector('.cursor');
+      document.addEventListener('mousemove',(e)=>{
+          cursor.style.left = e.pageX +'px';
+          cursor.style.top = e.pageY +'px';
+          
+      })
+  </script>
+</body>
+</html>

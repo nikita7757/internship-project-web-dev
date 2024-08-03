@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO3 Max</title>
+    <style>
+        body{
+        font-family: sans-serif;
+    }
+        p{
+            font-size: 25px;
+            margin: 20px;
+        }
+        p::first-letter {
+        font-weight: bold;
+        color: blue;
+        font-size: 3em; /* Example: Makes the first letter 3 times larger */
+        line-height: 1; /* Ensures the first letter doesn't affect line spacing */
+        padding-right: 5px;
+        }
+         
+        
+ .cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}table{
+        text-align: center;
+        background-color: #FAFAFA;
+        border: 2px solid  #3C3C3C;
+        border-collapse:collapse;
+        width: 90%;
+        height: auto;
+        position: relative;
+        top: 50px;
+        left:50px;
+        right:50px;
+       }
+       th{
+        background-color: #424242;
+        color: #FAFAFA;
+        border: 2px solid  #FAFAFA;
+        padding: 30px;
+        font-size: 25px;
+       }
+       td{
+        font-size:20px;
+       padding:20px;
+       border: 2px solid  #3C3C3C;
+       }
+       tr:hover{
+        background-color: #F9ED32;
+       }
+    </style>
+</head>
+<body>
+    <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <p>This Rhyno is tuned for long drives and no thrills.
+         Like all other variants, this machine comes with a fire-safe advanced LFP battery and all the other benefits of owning a Rhyno, along with a perfect blend of battery capacity and motor power to provide up to 150 km range on a single charge. While it may not provide a thrilling ride, it 
+        promises a dependable and unwavering presence on the long stretches.
+    </p>
+    <table>
+        <tr>
+            <th> Specification</th>
+            <th>Rhyno SE03 MAX </th>
+        </tr>
+        <tr>
+            <td>Battery  </td>
+            <td>2.7Kwh</td>
+        </tr>
+        <tr>
+            <td>Battery features</td>
+            <td>LFP with 1500 cycles
+                Active Balancing
+                Waterproof (IP67)                
+            </td>
+        </tr>
+        <tr>
+            <td>Battery warranty</td>
+            <td>3 years  </td>
+        </tr>
+        <tr>
+            <td>Charging time</td>
+            <td>4 hours (12A)</td>
+        </tr>
+        <tr>
+            <td>Motor</td>
+            <td>2000W</td>
+        </tr>
+        <tr>
+            <td>Max speed</td>
+            <td>65 km/h</td>
+        </tr>
+        <tr>
+            <td>Warranty on electronics</td>
+            <td>1 year</td>
+        </tr>
+        <tr>
+            <td>Max range (@30km/h)</td>
+            <td>120 km</td>
+        </tr>
+        <tr>
+            <td>Max range (@45km/h)</td>
+            <td>100 km</td>
+        </tr>
+        <tr>
+            <td>Max range (@full speed)</td>
+            <td>80 km</td>
+        </tr>
+        <tr>
+            <td>Other key benefits</td>
+            <td>Fire-safe battery
+                Range prediction
+                Comfortable ride
+                Stable and safe
+             </td>
+        </tr>
+
+    </table>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+            
+        })
+    </script>
+</body>
+</html>

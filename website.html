@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Policy</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            overflow-x: hidden;
+            animation: myani 5s;
+        }
+        @keyframes myani{
+            from{
+                 opacity:0;
+                 transform: translateY(-100%);
+                }
+            to{
+                 opacity: 1;
+                 transform: translateY(1%);
+            }
+        }
+    .cursor {
+    width: 5px;
+    height: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    }
+        div{
+         text-align: center;
+         background-color: #F2F2F2;
+         color: #414141;
+         border-radius: 30px;
+         margin: 25px;
+         padding: 20px;
+        }
+    h1{
+        text-align: center;
+        font-size: 70px;
+        font-weight: 350;
+    }
+  h3{
+        font-size: 20px;
+        color: #414141;
+    }
+    h2{
+        font-size: 40px;
+        color: #2C2A2A;
+    }
+      p{
+        font-size: 25px;
+    }
+    li{
+        padding: 5px;
+        font-size: 20px;
+        list-style-type: none;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <h1>Website Policy</h1>
+    <div>
+        <h2>This Website Policy outlines the terms and conditions governing the use of RHYNO EV . By accessing or using the Website, you agree to abide by these terms
+             and conditions. If you do not agree with any part of these terms, you may not use the Website.</h2>
+    <h2>Use of Content</h2>
+        <p>1.1. All content provided on the Website is for informational purposes only. The content may be subject to change without notice.</p>
+        <p>1.2. You may view, download, and print copies of the content for personal, non-commercial use only. Any other use, including but not limited to reproduction, modification,
+             distribution, or republication, without prior written permission, is strictly prohibited.</p> 
+         <h2>Links to Third-Party Websites</h2>
+            <p>. The Website may contain links to third-party websites for your convenience.
+                 These links do not imply endorsement or affiliation with the linked website.</p>
+                 <p>We do not control or take responsibility for the content, privacy policies,
+                     or practices of any third-party websites. Accessing these websites is at your own risk.</p>
+    <h2>Privacy</h2>
+          <p>
+            We are committed to protecting your privacy. Our Privacy Policy outlines how we collect, use, and disclose 
+            personal information. By using the Website, you consent to the terms of our Privacy Policy
+          </p>
+    
+    <h2>Contact Information</h2>
+          <p>
+            If you have any questions or concerns regarding this Website Policy, please contact us at
+            <br><br>Email: info@rhyno.in
+            <br>Phone: +91-9023987528
+         <p>  Last updated: [25/06/2024]</p> 
+          </p>
+    </div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <title>Rhyno </title>
+</head>
+<body>
+    <div class="cursor" style="top: 275px; left: 661px;"></div>
+    <header>
+        <img class="logo" src="Copy of Logo cropped without tagline (1).png">
+        <ul class="header-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="menu">
+                <a href="#">PRODUCTS</a>
+               <ul id="submenu">
+                <li><a href="SEO3.html"> SEO3 </a></li>
+                <li><a href="SEO3LITE.html"> SEO3 LITE </a></li>
+                <li><a href="SEO3MAX.html"> SEO3 MAX </a></li>
+               </ul>
+            </li>
+            <li><a href="Contact.html">PRE-BOOK NOW</a></li>
+           
+        </ul>
+    </header>
+        <section class="images">
+            <div id="photos"></div>
+        </section>
+        <div>
+            <h1 id="Features">Rhyno Tx series Electric Scooter</h1>
+         <div class="row">
+            <div class="col1">
+                <div class="speed"> 
+                     <img id="speed" src="speed.png">
+                     <h2>High speed</h2>
+                     <p>60 km/h speed with 2000 watts of immense power for flawless performance on different terrains</p>
+                </div>
+            </div> 
+            <div class="col2">
+                <div class="range">
+                    <img id="range" src="range.png">
+                    <h2>
+                       Long Range
+                    </h2>
+                    <p>100 kms of Range per charge, with accurate range prediction,
+                        to relieve you from range anxiety
+                    </p>
+               </div> 
+            </div>
+            <div class="col3">
+                <div class="Battery">
+                    <img id="Battery" src="	battery.png">
+                    <h2>
+                     LFP Battery
+                    </h2>
+                    <p>
+                        Fire resistant, water-proof [IP67] Lithium battery.
+                         With 2000+ cycle life and stable performance.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <section class="abtsection">
+            <div class="abt" >
+                <h1>ABOUT US</h1>
+                <P id="abtp1"  class="fade-in-right">Established in 2019 by an automotive engineer with a vision for sustainable and robust
+                    mobility solutions, Rhyno EV is not just a company; it's a collective effort of a dynamic team
+                    of young individuals passionately driving innovation in the electric vehicle industry. We
+                    believe in engineering solutions that solve problems.
+                </P>
+                <p id="abtp2" class="fade-in-left">With our first product, we've taken a bold step to create something more than just a vehicle;
+                    it's a unique experience of elegance, comfort and style, addressing the pitfalls of
+                    conventional electric scooters. Our design prioritizes safety, eliminating concerns of fires and
+                    ensuring a longer battery lifespan with our battery technology. Perfectly suited for fleet
+                    operators, especially in tourist-centric locations like Goa, our rugged yet aesthetically
+                    appealing scooters are engineered for longevity and reliability. Join us as we pioneer a new
+                    era in sustainable and dependable electric transportation.</p>
+               
+            </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div id="footer-ul1">
+        <ul>
+       <li> <a href="privacy.html">Privacy Policy</a></li>
+       <li> <a href="Refund.html">Refund Policy</a></li>
+        </ul>
+    </div>
+    <div id="footer-ul2">
+        <ul>
+          <li> <a href="website.html">Website Policy</a></li>
+          <li> <a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="footer-ul3">
+        <ul>
+            <li> <a href="rentals.html">Rentals</a></li>
+            <li><a  href="https://www.linkedin.com/company/rhyno-wheels/?originalSubdomain=in">Careers</a></li>
+        </ul>
+    </div>
+   
+    </div> 
+        </div>
+    </footer>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',(e)=>{
+            cursor.style.left = e.pageX +'px';
+            cursor.style.top = e.pageY +'px';
+            
+        })
+    </script>
+</body>
+</html>
