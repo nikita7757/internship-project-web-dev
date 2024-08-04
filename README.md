@@ -1,4 +1,4 @@
-This Project was given by teachnook.
+This project was assigned by Teachnook.
 In  project i have to develop an e-commerce website for RHYNO ev. 
 
 Special thanks to Teachnook for the opportunity and guidance throughout this project,
