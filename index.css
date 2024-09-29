@@ -1,26 +1,41 @@
 @media (max-width: 768px) {
-    /* Mobile styles */
-    #photos {
-        width: 100%; /* Full width on mobile */
-        left: 0; /* Center the image */
+    /* Styles for mobile devices */
+    body {
+        font-size: 14px; /* Example */
     }
 
-    .row {
-        flex-direction: column; /* Stack columns */
-        align-items: center; /* Center the columns */
-    }
-
-    .col1, .col2, .col3 {
-        width: 90%; /* Make boxes take most of the width */
-        margin: 10px 0; /* Add vertical spacing */
+    .logo {
+        width: 150px;
+        left: 20px; /* Adjust to fit the screen */
     }
 
     .header-ul {
-        left: auto; /* Reset left position */
-        top: 20px; /* Adjust for visibility */
+        font-size: 20px;
+        left: 0; /* Reposition to fit smaller screens */
+        top: 60px; /* Place the nav under the logo */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
-}
 
+    #photos {
+        width: 100%;
+        left: 0; /* Remove large fixed values for mobile */
+        height: 400px; /* Adjust height as per mobile screen size */
+        background-size: cover; /* Ensure background image covers the entire container */
+    }
+
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+        height: auto; /* Adjust height */
+        padding: 0 20px;
+    }
+
+    .col1, .col2, .col3 {
+        width: 100%;
+        height: auto; /* Adjust height */
+        margin-bottom: 20px; /* Add space between columns */
+    }
 
     footer {
         width: 100%;
