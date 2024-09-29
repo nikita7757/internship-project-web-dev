@@ -6,6 +6,7 @@
 }
 
  body{
+     
     background-color: #EDEDED;
     margin: 0;
     min-height: 100vh;
@@ -244,6 +245,7 @@ footer {
     position: relative; /* Positioning context */
     bottom: 0; /* Stick to bottom if needed */
     width: 100%; /* Full width */
+    height :250px;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
