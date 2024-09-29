@@ -227,7 +227,7 @@ header {
     height: 600px;
     width: 800px;
     position: relative;
-    left: 350px;
+    left: 300px;
     top: 250px;
     align-items: center;
 }
@@ -295,7 +295,7 @@ footer {
 #footer-ul1, #footer-ul2, #footer-ul3 {
     flex-direction: row;
     width: 50px;
-    height: 100px;
+    height: 300px;
     padding: 50px 80px;
     margin: 10px;
     text-decoration: none;
