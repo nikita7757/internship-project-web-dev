@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+    body {
+        font-size: 14px; /* Example */
+    }
+}
 
  body{
     background-color: #EDEDED;
